@@ -28,6 +28,7 @@ ExecStartPre=-/sbin/modprobe br_netfilter
 ExecStartPre=-/sbin/modprobe overlay
 ExecStart=/usr/local/bin/k3s \
 server \
+--cluster-init \
 --write-kubeconfig-mode 644 \
 --tls-san=86.57.237.180 \
 --disable traefik \
