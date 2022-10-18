@@ -28,6 +28,7 @@ ExecStartPre=-/sbin/modprobe br_netfilter
 ExecStartPre=-/sbin/modprobe overlay
 ExecStart=/usr/local/bin/k3s \
 server \
+--token nmgCsLnxuhX6Vu3YjvSBDC5a85 \
 --cluster-init \
 --write-kubeconfig-mode 644 \
 --tls-san=86.57.237.180 \
