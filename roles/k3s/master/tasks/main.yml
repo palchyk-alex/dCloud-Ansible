@@ -1,7 +1,7 @@
 ---
 - name: Copy K3s main service file
   register: k3s_service
-  when: "ansible_default_ipv4.address is '{{ master_ip }}'"
+  when: ansible_default_ipv4.address is '{{ master_ip }}'
   template:
     src: "k3s.service.main.j2"
     dest: "{{ systemd_dir }}/k3s.service"
